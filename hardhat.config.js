@@ -1,38 +1,27 @@
-require("@nomiclabs/hardhat-waffle");
-require("@nomiclabs/hardhat-etherscan");
+/* eslint-disable linebreak-style */
+/* eslint-disable no-console */
+/* eslint-disable no-undef */
+require('@nomiclabs/hardhat-waffle');
+require('@nomiclabs/hardhat-etherscan');
+require('@nomiclabs/hardhat-waffle');
 
 // Go to https://www.alchemyapi.io, sign up, create
 // a new App in its dashboard, and replace "KEY" with its key
-const ALCHEMY_API_KEY = "ALCHEMY_API_KEY";
+const ALCHEMY_API_KEY = 'KEY';
 
 // Replace this private key with your Ropsten account private key
 // To export your private key from Metamask, open Metamask and
 // go to Account Details > Export Private Key
 // Be aware of NEVER putting real Ether into testing accounts
-/**const ROPSTEN_PRIVATE_KEY = "key";
-
-module.exports = {
-  solidity: "0.8.4",
-  networks: {
-    ropsten: {
-      url: `https://eth-ropsten.alchemyapi.io/v2/${ALCHEMY_API_KEY}`,
-      accounts: [`0x${ROPSTEN_PRIVATE_KEY}`]
-    }
-  },
-  etherscan: {
-    // Your API key for Etherscan
-    // Obtain one at https://etherscan.io/
-    apiKey: "key"
-  }
-};
-*/
-require("@nomiclabs/hardhat-waffle");
+const ROPSTEN_PRIVATE_KEY = 'KEY';
 
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
-task("accounts", "Prints the list of accounts", async () => {
+
+task('accounts', 'Prints the list of accounts', async () => {
   const accounts = await ethers.getSigners();
 
+  // eslint-disable-next-line no-restricted-syntax
   for (const account of accounts) {
     console.log(account.address);
   }
@@ -45,13 +34,20 @@ task("accounts", "Prints the list of accounts", async () => {
  * @type import('hardhat/config').HardhatUserConfig
  */
 module.exports = {
-  solidity: "0.6.2",
+  solidity: '0.6.6',
   paths: {
-    artifacts: "./src/artifacts",
+    artifacts: './src/artifacts',
   },
   networks: {
+    ropsten: {
+      url: `https://eth-ropsten.alchemyapi.io/v2/${ALCHEMY_API_KEY}`,
+      accounts: [`0x${ROPSTEN_PRIVATE_KEY}`],
+    },
     hardhat: {
-      chainId: 1337,
+      forking: {
+        url: 'https://eth-mainnet.alchemyapi.io/v2/KEY',
+        blockNumber: 12610259,
+      },
     },
   },
 };
