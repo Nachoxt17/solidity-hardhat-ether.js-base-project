@@ -2,11 +2,53 @@
 
 +-Users can Connect their Wallets and **Write Here What Users can do in your D.A.P.P.**.
 
-## +-To run the Project:\_
+## +-For Testing the Successful S.C. DEMO Deployed in the Ropsten Ethereum TestNet:\_
+Smart Contract deployed with the account: ------------------
+https://ropsten.etherscan.io/address/------------------
 
-+-To Deploy de Smart Contract and the Front-End:\_
-+-(1)-Open a 1st Terminal and run "npx hardhat compile".
-+-(2)-In the 1st Terminal then run "npx hardhat node".
-+-(3)-Open a 2nd Terminal and run "npx hardhat run scripts/deploy.js --network localhost".
++-You can get Ropsten Test Ether Here:\_
+https://faucet.dimensions.network
 
-## +-To Test:\_
++-How to Interact with the Deployed Smart Contract:\_
+https://docs.alchemy.com/alchemy/tutorials/hello-world-smart-contract/interacting-with-a-smart-contract#step-6-update-the-message
+
+## +-Quick Project start:\_
+
++-(1)-The first things you need to do are cloning this repository and installing its
+dependencies:
+
+```sh
+npm install
+```
+
++-(2)-Secondly, Copy and Paste the File ".env.example" inside the same Root Folder(You will Duplicate It) and then rename it removing the part of ".example" so that it looks like ".env" and then fill all the Data Needed Inside the File. In the part of "ALCHEMY_API_KEY"
+just write the KEY, not the whole URL.
+
++-(3-A)-Now open a Terminal and let's Test your Project Cloning the Ethereum Main Network in your Local Hardhat Node:\_
+https://hardhat.org/guides/mainnet-forking.html
+
+```sh
+npx hardhat node
+```
+
++-(3-B)-Or you can also run Ropsten Ethereum Test Network(https://hardhat.org/tutorial/deploying-to-a-live-network.html)(https://docs.openzeppelin.com/learn/deploying-and-interacting?pref=hardhat):\_
+
+```sh
+npx hardhat run scripts/deploy.js --network ropsten
+```
+
++-(4)-To Interact with the Deployed S.C. you need to run contract-interact.js:\_
+
+```sh
+node scripts/contract-interact.js
+```
+
+## User Guide:\_
+
+You can find detailed instructions on using this repository and many tips in [its documentation](https://hardhat.org/tutorial).
+
+- [Setting up the environment](https://hardhat.org/tutorial/setting-up-the-environment.html)
+- [Testing with Hardhat, Mocha and Waffle](https://hardhat.org/tutorial/testing-contracts.html)
+- [Hardhat's full documentation](https://hardhat.org/getting-started/)
+
+For a complete introduction to Hardhat, refer to [this guide](https://hardhat.org/getting-started/#overview).
