@@ -43,6 +43,12 @@ npx hardhat run scripts/deploy.js --network ropsten
 node scripts/contract-interact.js
 ```
 
++-(5)-Verify your smart contract on Etherscan:\_
+
+```sh
+npx hardhat verify --network ropsten DEPLOYED_SMART_CONTRACT_ADDRESS_ROPSTEN 'Hello World!'
+```
+
 ## User Guide:\_
 
 You can find detailed instructions on using this repository and many tips in [its documentation](https://hardhat.org/tutorial).
