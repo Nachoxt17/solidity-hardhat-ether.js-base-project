@@ -45,7 +45,7 @@ module.exports = {
   networks: {
     hardhat: {
       forking: {
-        url: 'https://eth-mainnet.alchemyapi.io/v2/${HARDHAT_MAINNET_FORK_KEY}',
+        url: `https://eth-mainnet.alchemyapi.io/v2/${HARDHAT_MAINNET_FORK_KEY}`,
         blockNumber: 12610259,
       },
     },
