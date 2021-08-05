@@ -42,12 +42,14 @@ module.exports = {
   paths: {
     artifacts: "./src/artifacts",
   },
+  defaultNetwork: "hardhat",
   networks: {
     hardhat: {
-      forking: {
+      /**forking: {
         url: `https://eth-mainnet.alchemyapi.io/v2/${HARDHAT_MAINNET_FORK_KEY}`,
         blockNumber: 12610259,
-      },
+      },*/
+      chainId: 1337
     },
     ropsten: {
       url: `https://eth-ropsten.alchemyapi.io/v2/${ALCHEMY_API_KEY}`,
