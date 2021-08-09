@@ -21,29 +21,46 @@ dependencies:
 npm install
 ```
 
-+-(2)-Secondly, Copy and Paste the File ".env.example" inside the same Root Folder(You will Duplicate It) and then rename it removing the part of ".example" so that it looks like ".env" and then fill all the Data Needed Inside the File. In the part of "ALCHEMY_API_KEY"
++-(2)-Copy and Paste the File ".env.example" inside the same Root Folder(You will Duplicate It) and then rename it removing the part of ".example" so that it looks like ".env" and then fill all the Data Needed Inside the File. In the part of "ALCHEMY_API_KEY"
 just write the KEY, not the whole URL.
 
-+-(3-A)-Now open a Terminal and let's Test your Project Cloning the Ethereum Main Network in your Local Hardhat Node:\_
++-(3-A)-Open a Terminal and let's Test your Project in a Hardhat Local Node. You can also Clone the Ethereum Main Network in your Local Hardhat Node:\_
 https://hardhat.org/guides/mainnet-forking.html
 
 ```sh
 npx hardhat node
 ```
 
-+-(3-B)-Or you can also run Ropsten Ethereum Test Network(https://hardhat.org/tutorial/deploying-to-a-live-network.html)(https://docs.openzeppelin.com/learn/deploying-and-interacting?pref=hardhat):\_
++-(3-B)-Now Open a 2nd Terminal and Deploy your Project in the Hardhat Local Node. You can also Test it in the same Terminal:\_
+
+```sh
+npx hardhat run scripts/deploy.js --network localhost
+npx hardhat test
+```
+
+## +-Deploying the Project to the Ropsten TestNet:_
+
++-(4)-Deploy the Smart Contract to the Ropsten Ethereum Test Network(https://hardhat.org/tutorial/deploying-to-a-live-network.html):\_
 
 ```sh
 npx hardhat run scripts/deploy.js --network ropsten
 ```
 
-+-(4)-To Interact with the Deployed S.C. you need to run contract-interact.js:\_
+## +-Deploying the Project to the Ethereum MainNet:_
+
++-(5)-Deploy the Smart Contract to the Ethereum Main Network(https://hardhat.org/tutorial/deploying-to-a-live-network.html):\_
+
+```sh
+npx hardhat run scripts/deploy.js --network mainnet
+```
+
++-(6)-To Interact with the Deployed S.C. you need to run contract-interact.js:\_
 
 ```sh
 node scripts/contract-interact.js
 ```
 
-+-(5)-Verify your smart contract on Etherscan:\_
++-(8)-Verify your smart contract on Etherscan:\_
 
 ```sh
 npx hardhat verify --network ropsten DEPLOYED_SMART_CONTRACT_ADDRESS_ROPSTEN 'Hello World!'
