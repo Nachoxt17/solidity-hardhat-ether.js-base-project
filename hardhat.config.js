@@ -8,16 +8,18 @@ require("@nomiclabs/hardhat-waffle");
 require("@nomiclabs/hardhat-etherscan");
 
 // Go to https://www.alchemyapi.io, sign up, create
-// a new App in its dashboard, and replace "KEY" with its key in the ".env" file.
-const ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY;
+// a new App in its dashboard in whatever E.V.M. Compatible Blockcahin
+// do you need, and replace "KEY" with its key in the ".env" file.
+const ETH_ROPSTEN_ALCHEMY_API_KEY = process.env.ETH_ROPSTEN_ALCHEMY_API_KEY;
+const ETH_MAINNET_ALCHEMY_API_KEY = process.env.ETH_MAINNET_ALCHEMY_API_KEY;
 
-// Replace this private key with your Ropsten account private key in the ".env" file.
+// Replace this private key with your E.V.M. Compatible Blockcahin account private key in the ".env" file.
 // To export your private key from Metamask, open Metamask and
 // go to Account Details > Export Private Key
-// Be aware of NEVER putting real Ether into testing accounts
-const ROPSTEN_PRIVATE_KEY = process.env.ROPSTEN_PRIVATE_KEY;
-
+// Be aware of NEVER putting real Ether into testing accounts.
 const HARDHAT_MAINNET_FORK_KEY = process.env.HARDHAT_MAINNET_FORK_KEY;
+const ROPSTEN_PRIVATE_KEY = process.env.ROPSTEN_PRIVATE_KEY;
+const ETH_MAINNET_PRIVATE_KEY = process.env.ETH_MAINNET_PRIVATE_KEY;
 
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
@@ -52,8 +54,12 @@ module.exports = {
       chainId: 1337
     },
     ropsten: {
-      url: `https://eth-ropsten.alchemyapi.io/v2/${ALCHEMY_API_KEY}`,
+      url: `https://eth-ropsten.alchemyapi.io/v2/${ETH_ROPSTEN_ALCHEMY_API_KEY}`,
       accounts: [`0x${ROPSTEN_PRIVATE_KEY}`],
+    },
+    mainnet: {
+      url: `https://eth-mainnet.alchemyapi.io/v2/${ETH_MAINNET_ALCHEMY_API_KEY}`,
+      accounts: [`0x${ETH_MAINNET_PRIVATE_KEY}`],
     },
   },
   etherscan: {
