@@ -89,7 +89,7 @@ contract BaseSmartContract {
     address public SampleSmartContract;
     address private constant UNISWAP_V2_ROUTER = 0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D;
 
-    constructor(address _SampleSmartContract) public {
+    constructor(address _SampleSmartContract) {
         SampleSmartContract = _SampleSmartContract;
     }
 }
