@@ -50,7 +50,7 @@ module.exports = {
         blockNumber: 12610259,
       },*/
       chainId: 1337
-    },
+    }/**,
     ropsten: {
       url: `https://eth-ropsten.alchemyapi.io/v2/${ETH_ROPSTEN_ALCHEMY_API_KEY}`,
       accounts: [`0x${ROPSTEN_PRIVATE_KEY}`],
@@ -64,5 +64,5 @@ module.exports = {
       // Your API key for Etherscan
       // Obtain one at https://etherscan.io/
       apiKey: process.env.ETHERSCAN_API_KEY,
-  },
-};
+  },*/
+}
