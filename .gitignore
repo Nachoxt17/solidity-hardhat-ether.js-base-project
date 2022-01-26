@@ -18,3 +18,5 @@ examples
 #Hardhat files
 cache
 artifacts
+.obsidian
+.DS_Store
