@@ -1,7 +1,9 @@
-/* eslint-disable no-undef */
-const BaseSmartContract = artifacts.require("BaseSmartContract");
+const { expect } = require("chai");
+const { ethers, network } = require("hardhat");
 
-require("chai").use(require("chai-as-promised")).should();
+var chai = require("chai");
+const BN = require("bn.js");
+chai.use(require("chai-bn")(BN));
 
 function tokens(n) {
   return web3.utils.toWei(n, "ether");
