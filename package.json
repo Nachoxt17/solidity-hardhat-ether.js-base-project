@@ -11,16 +11,22 @@
     "solidity",
     "hardhat"
   ],
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "coverage": "hardhat coverage",
+    "deploy-rinkeby": "hardhat deploy --network rinkeby",
+    "verify": "npx hardhat verify --network rinkeby"
+  },
  "dependencies": {
+   "@openzeppelin/contracts": "^4.4.2",
     "@remix-project/remixd": "^0.5.5",
     "dotenv": "^10.0.0"
   },
-  "scripts": {},
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.3",
     "@nomiclabs/hardhat-etherscan": "^2.1.1",
     "@nomiclabs/hardhat-waffle": "2.0.1",
-    "@openzeppelin/contracts": "^4.4.1",
     "@openzeppelin/hardhat-upgrades": "*",
     "chai": "^4.3.4",
     "chai-bn": "^0.3.0",
