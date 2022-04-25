@@ -1,6 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 package-lock.json
+cache
+cache/*
 npm_modules
 npm_modules/*
 .env
@@ -8,10 +10,12 @@ npm_modules/*
 .env.development.local
 .env.test.local
 .env.production.local
-logs/*
 logs
-examples/*
+logs/*
 examples
+examples/*
+node_modules
+node_modules/*
 
 #Hardhat files
 cache
