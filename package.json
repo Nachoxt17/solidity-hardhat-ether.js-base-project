@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Solidity Hardhat Ether.js Base Project",
   "author": "ignacioceaglio@protonmail.com",
+  "license": "MIT",
   "keywords": [
     "ethereum",
     "smart",
