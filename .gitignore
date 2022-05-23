@@ -19,6 +19,7 @@ node_modules/*
 
 #Hardhat files
 cache
+cache/*
 artifacts
 .obsidian
 .DS_Store
