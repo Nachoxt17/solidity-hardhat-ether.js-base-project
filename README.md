@@ -34,7 +34,6 @@ npx hardhat node
 +-(3-B)-Now Open a 2nd Terminal and Deploy your Project in the Hardhat Local Node. You can also Test it in the same Terminal:\_
 
 ```sh
-npx hardhat run scripts/deploy.js --network localhost
 npx hardhat test
 ```
 
