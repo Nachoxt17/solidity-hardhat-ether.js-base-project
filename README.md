@@ -81,3 +81,12 @@ You can find detailed instructions on using this repository and many tips in [it
 - [Hardhat's full documentation](https://hardhat.org/getting-started/)
 
 For a complete introduction to Hardhat, refer to [this guide](https://hardhat.org/getting-started/#overview).
+
+:beginner: IMPORTANT!!! Slither-Analizer for Solidity Smart Contracts Auditing Installation and Troubleshooting:
+https://github.com/crytic/slither/issues/1103
+
+```sh
+pip3 install slither-analyzer
+pip3 install crytic-compile
+pip3 install -U https://github.com/crytic/crytic-compile/archive/refs/heads/dev-windows-long-paths.zip
+```
