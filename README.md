@@ -82,7 +82,7 @@ You can find detailed instructions on using this repository and many tips in [it
 
 For a complete introduction to Hardhat, refer to [this guide](https://hardhat.org/getting-started/#overview).
 
-:beginner: IMPORTANT!!! Slither-Analizer for Solidity Smart Contracts Auditing Installation and Troubleshooting:
+:beginner: IMPORTANT!!! Slither-Analyzer for Solidity Smart Contracts Auditing Installation and Troubleshooting:
 https://github.com/crytic/slither/issues/1103
 
 ```sh
