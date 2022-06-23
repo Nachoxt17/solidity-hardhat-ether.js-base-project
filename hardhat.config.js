@@ -62,9 +62,6 @@ module.exports = {
     runOnCompile: true,
     strict: false,
   },
-  paths: {
-    artifacts: "./src/artifacts",
-  },
   defaultNetwork: "hardhat",
   networks: {
     hardhat: {
