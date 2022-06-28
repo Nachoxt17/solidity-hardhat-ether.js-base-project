@@ -5,8 +5,8 @@ In this video, I will show how to find vulnerability inside an Ethereum smart co
 - IMPORTANT: Use Linux or a Linux WSL Console for using Echidna. If you are using a framework (eg hardhat) you should use the project folder as echidna target, and not a ```.sol``` file. This way, the framework will take care of resolving the imports. You can indicate a specific contract from the project using ```--contract```:
 
 ```sh
-./echidna-test . --contract NFTMarket (note the dot indicating the current directory as target)
-```
+./echidna-test . --contract NFTMarket
+```(note the dot indicating the current directory as target)
 
 If you are not using a framework, you will need to use ```--solc-args``` / ```--crytic-args``` to pass the correct remappings for your libraries, like you would do when running ```solc```.
 
