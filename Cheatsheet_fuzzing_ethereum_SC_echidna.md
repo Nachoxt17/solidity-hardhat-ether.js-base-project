@@ -6,7 +6,8 @@ In this video, I will show how to find vulnerability inside an Ethereum smart co
 
 ```sh
 ./echidna-test . --contract NFTMarket
-```(note the dot indicating the current directory as target)
+```
+(note the dot indicating the current directory as target)
 
 If you are not using a framework, you will need to use ```--solc-args``` / ```--crytic-args``` to pass the correct remappings for your libraries, like you would do when running ```solc```.
 
