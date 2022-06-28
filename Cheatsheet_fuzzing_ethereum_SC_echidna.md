@@ -1,6 +1,6 @@
 # Fuzzing Ethereum smart contract using echidna
 
-In this video, I will show how to find vulnerability inside an Ethereum smart contract written in Solidity using echidna, one of the only Ethereum smart contract fuzzer.
+In this video, I will show how to find vulnerability inside an Ethereum smart contract written in Solidity using echidna, one of the only Ethereum smart contract fuzzer. IMPORTANT: Use Linux or a Linux Console for using Echidna.
 
 - Author: Patrick Ventuzelo 
 - Link: https://academy.fuzzinglabs.com/introduction-to-ethereum-security
