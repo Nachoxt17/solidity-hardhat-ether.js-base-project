@@ -46,7 +46,7 @@ npx hardhat test
 
 ## Solidity Smart Contracts Auditing Tools:
 
-:hammer_and_wrench: You can Install Slither-Analyzer and use it to Audit Common Vulnerabilities in the Solidity Smart Contracts:
+:hammer_and_wrench: For a Quick and Simple Audit of the Solidity Smart Contracts, you can Install and Use Slither-Analyzer:
 [Slither-Analyzer Functioning Troubleshooting](https://github.com/crytic/slither/issues/1103)
 - Installation:
 ```sh
@@ -59,7 +59,7 @@ pip3 install -U https://github.com/crytic/crytic-compile/archive/refs/heads/dev-
 slither .
 ```
 
-:hammer_and_wrench: You can Install Mythril Analyzer and use it to Audit the Solidity Smart Contracts:
+:hammer_and_wrench: For a More Detailed Audit of the Solidity Smart Contracts, you can Install and Use Mythril Analyzer:
 - Installation(Always use Linux Ubuntu/WSL 2.0 If Possible):
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
