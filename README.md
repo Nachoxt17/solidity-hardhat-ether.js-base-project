@@ -46,7 +46,7 @@ npx hardhat test
 
 ## Solidity Smart Contracts Auditing Tools:
 
-:beginner: You can Install Slither-Analyzer and use it to Audit Coolidity Smart Contracts:
+:hammer_and_wrench: You can Install Slither-Analyzer and use it to Audit Common Vulnerabilities in the Solidity Smart Contracts:
 [Slither-Analyzer Functioning Troubleshooting](https://github.com/crytic/slither/issues/1103)
 - Installation:
 ```sh
@@ -55,17 +55,22 @@ pip3 install crytic-compile
 pip3 install -U https://github.com/crytic/crytic-compile/archive/refs/heads/dev-windows-long-paths.zip
 ```
 - Usage:
+Run:
 ```sh
-slither .
+myth analyze <solidity-file>
+```
+Or:
+```sh
+myth analyze -a <contract-address>
 ```
 
-:beginner: You can Install Slither-Analyzer and use it to Audit the Solidity Smart Contracts:
-[Slither-Analyzer Functioning Troubleshooting](https://github.com/crytic/slither/issues/1103)
-- Installation:
+:hammer_and_wrench: You can Install Mythril Analyzer and use it to Audit the Solidity Smart Contracts:
+- Installation(Always use Linux Ubuntu/WSL 2.0 If Possible):
 ```sh
-pip3 install slither-analyzer
-pip3 install crytic-compile
-pip3 install -U https://github.com/crytic/crytic-compile/archive/refs/heads/dev-windows-long-paths.zip
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+rustup default nightly
+pip3 install mythril
+myth version
 ```
 - Usage:
 ```sh
