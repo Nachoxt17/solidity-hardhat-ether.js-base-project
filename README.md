@@ -55,13 +55,8 @@ pip3 install crytic-compile
 pip3 install -U https://github.com/crytic/crytic-compile/archive/refs/heads/dev-windows-long-paths.zip
 ```
 - Usage:
-Run:
 ```sh
-myth analyze <solidity-file>
-```
-Or:
-```sh
-myth analyze -a <contract-address>
+slither .
 ```
 
 :hammer_and_wrench: You can Install Mythril Analyzer and use it to Audit the Solidity Smart Contracts:
@@ -73,8 +68,13 @@ pip3 install mythril
 myth version
 ```
 - Usage:
+Run:
 ```sh
-slither .
+myth analyze <solidity-file>
+```
+Or:
+```sh
+myth analyze -a <contract-address>
 ```
 
 ## Deploying the Project to the Mumbai TestNet:
