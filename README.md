@@ -44,7 +44,22 @@ npx hardhat node
 npx hardhat test
 ```
 
-:beginner: You can also Install Slither-Analyzer and use it to Audit the Solidity Smart Contracts:
+## Solidity Smart Contracts Auditing Tools:
+
+:beginner: You can Install Slither-Analyzer and use it to Audit Coolidity Smart Contracts:
+[Slither-Analyzer Functioning Troubleshooting](https://github.com/crytic/slither/issues/1103)
+- Installation:
+```sh
+pip3 install slither-analyzer
+pip3 install crytic-compile
+pip3 install -U https://github.com/crytic/crytic-compile/archive/refs/heads/dev-windows-long-paths.zip
+```
+- Usage:
+```sh
+slither .
+```
+
+:beginner: You can Install Slither-Analyzer and use it to Audit the Solidity Smart Contracts:
 [Slither-Analyzer Functioning Troubleshooting](https://github.com/crytic/slither/issues/1103)
 - Installation:
 ```sh
