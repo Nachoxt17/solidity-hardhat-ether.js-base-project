@@ -61,9 +61,13 @@ PyPI on Ubuntu
    # Install libssl-dev, python3-dev, and python3-pip
    sudo apt install libssl-dev python3-dev python3-pip
 
-   # Install mythril
+   # Install mythril (Always use Linux Ubuntu/WSL 2.0 If Possible)
+   sudo apt update
+   sudo apt upgrade
+   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+   rustup default nightly
    pip3 install mythril
-   myth --version
+   myth version
 
 
 ******
