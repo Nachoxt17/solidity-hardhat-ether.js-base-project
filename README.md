@@ -77,7 +77,7 @@ Or:
 myth analyze -a <contract-address>
 ```
 
-## Auditing Approach:_
+## :hammer_and_wrench:Auditing Approach:
 - Read about the project in its Documentation and Talk to its Developers if Possible to get an idea of what the Smart Contracts are meant to do.
 - Look over the Smart Contracts to get an idea of the Smart Contracts Architecture.
 - Create a threat model and make a list of theoretical attack vectors including all common pitfalls and past exploit techniques. Tools like Slither and Mythrill can help with this.
