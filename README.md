@@ -1,13 +1,13 @@
 # Base-Smart-Contract
 
-+-Users can Connect their Wallets and **Write Here What Users can do in your D.A.P.P.**.
+- Users can Connect their Wallets and **Write Here What Users can do in your D.A.P.P.**.
 
 ## For Testing the Successful S.C. DEMO Deployed in the Mumbai Polygon TestNet:
 
 Smart Contract deployed with the account: ------------------
 https://mumbai.polygonscan.com/address/------------------
 
--You can get Mumbai Test Matic Here:
+- You can get Mumbai Test Matic Here:
 https://faucet.polygon.technology
 
 - How to Interact with the Deployed Smart Contract:
