@@ -77,6 +77,15 @@ Or:
 myth analyze -a <contract-address>
 ```
 
+## Auditing Approach:_
+- Read about the project in its Documentation and Talk to its Developers if Possible to get an idea of what the Smart Contracts are meant to do.
+- Look over the Smart Contracts to get an idea of the Smart Contracts Architecture.
+- Create a threat model and make a list of theoretical attack vectors including all common pitfalls and past exploit techniques. Tools like Slither and Mythrill can help with this.
+- Look at places that can do value exchange. Especially functions like transfer, transferFrom, send, call, delegatecall, and selfdestruct. Walk backward from them to ensure they are secured properly.
+- Do a line-by-line review of the contracts.
+- Do another review from the perspective of every actor in your threat model.
+- Glance over the test cases and code coverage.
+
 ## Deploying the Project to the Mumbai TestNet:
 
 :five: Deploy the Smart Contract to the Mumbai Polygon Test Network(https://hardhat.org/tutorial/deploying-to-a-live-network.html):
