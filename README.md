@@ -49,6 +49,12 @@ npx hardhat test
 :hammer_and_wrench: For a Quick and Simple Audit of the Solidity Smart Contracts, you can Install and Use Slither-Analyzer:
 [Slither-Analyzer Functioning Troubleshooting](https://github.com/crytic/slither/issues/1103)
 - Installation:
+- If you are Using Linux/Ubuntu, First Install Solidity:
+```sh
+sudo add-apt-repository ppa:ethereum/ethereum
+sudo apt-get update
+sudo apt-get install solc
+```
 ```sh
 pip3 install -U https://github.com/crytic/crytic-compile/archive/refs/heads/dev-windows-long-paths.zip
 crytic-compile --v
