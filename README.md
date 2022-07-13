@@ -50,9 +50,13 @@ npx hardhat test
 [Slither-Analyzer Functioning Troubleshooting](https://github.com/crytic/slither/issues/1103)
 - Installation:
 ```sh
+pip3 install -U https://github.com/crytic/crytic-compile/archive/refs/heads/dev-windows-long-paths.zip
+pip3 install -U https://github.com/elopez/slither/archive/refs/heads/windows-ci.zip
+```
+Or:
+```sh
 pip3 install crytic-compile==0.2.2
 pip3 install slither-analyzer==0.8.2
-pip3 install -U https://github.com/crytic/crytic-compile/archive/refs/heads/dev-windows-long-paths.zip
 ```
 ### Usage:
 - Analyze all the S.C.s inside a Directory:
