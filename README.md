@@ -54,9 +54,18 @@ pip3 install slither-analyzer
 pip3 install crytic-compile
 pip3 install -U https://github.com/crytic/crytic-compile/archive/refs/heads/dev-windows-long-paths.zip
 ```
-- Usage:
+### Usage:
+- Analyze all the S.C.s inside a Directory:
 ```sh
 slither .
+```
+- Analyze all the S.C.s inside a Directory Ignoring all prior Warnings:
+```sh
+slither . --triage
+```
+- See all the prior Warnings Again:
+```sh
+rm slither.db.json
 ```
 
 :hammer_and_wrench: For a More Detailed Audit of the Solidity Smart Contracts, you can Install and Use Mythril Analyzer:
@@ -67,7 +76,7 @@ rustup default nightly
 pip3 install mythril
 myth version
 ```
-- Usage:
+### Usage:
 Run:
 ```sh
 myth analyze <solidity-file>
