@@ -44,7 +44,9 @@ npx hardhat node
 npx hardhat test
 ```
 
-## Solidity Smart Contracts Auditing Tools:
+## Solidity Smart Contracts Auditing Tools(Always use Linux Ubuntu/WSL 2.0 If Possible):
+
+### -NOTE: Always run all the Tools Directly in the Directory where the S.C. ```.sol``` Files are Located.
 
 :hammer_and_wrench: For a Quick and Simple Audit of the Solidity Smart Contracts, you can Install and Use Slither-Analyzer:
 [Slither-Analyzer Functioning Troubleshooting](https://github.com/crytic/slither/issues/1103)
@@ -55,14 +57,14 @@ pip3 install solc-select
 solc-select versions
 solc-select install
 ```
-- Install Slither For Windows WSL Ubuntu Console:
+- Install Slither For Windows WSL Linux Ubuntu Console:
 ```sh
 pip3 install -U https://github.com/crytic/crytic-compile/archive/refs/heads/dev-windows-long-paths.zip
 crytic-compile --v
 pip3 install -U https://github.com/elopez/slither/archive/refs/heads/windows-ci.zip
 slither --v
 ```
-Or also in any other case:
+Or in any other case:
 ```sh
 pip3 install crytic-compile==0.2.2
 crytic-compile --v
@@ -84,7 +86,7 @@ rm slither.db.json
 ```
 
 :hammer_and_wrench: For a More Detailed Audit of the Solidity Smart Contracts, you can Install and Use Mythril Analyzer:
-- Installation(Always use Linux Ubuntu/WSL 2.0 If Possible):
+- Installation:
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 rustup default nightly
