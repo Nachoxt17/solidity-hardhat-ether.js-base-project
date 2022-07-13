@@ -46,7 +46,7 @@ npx hardhat test
 
 ## Solidity Smart Contracts Auditing Tools(Always use Linux Ubuntu/WSL 2.0 If Possible):
 
-### - NOTE: Always run all the Tools Directly in the Directory where the S.C. ```.sol``` Files are Located.
+- NOTE: Always run all the Tools Directly in the Directory where the S.C. ```.sol``` Files are Located.
 
 :hammer_and_wrench: For a Quick and Simple Audit of the Solidity Smart Contracts, you can Install and Use Slither-Analyzer:
 [Slither-Analyzer Functioning Troubleshooting](https://github.com/crytic/slither/issues/1103)
