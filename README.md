@@ -43,6 +43,7 @@ npx hardhat node
 ```sh
 npx hardhat test
 ```
+- NOTE: Remember that you can Guide yourself about [Ethers.js Unit Testing with this Documentation.](https://docs.ethers.io/ethers.js/v3.0/html/api-utils.html)
 
 ## Solidity Smart Contracts Auditing Tools(Always use Linux Ubuntu/WSL 2.0 If Possible):
 
