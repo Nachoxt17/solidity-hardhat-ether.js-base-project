@@ -10,7 +10,6 @@ require("hardhat-contract-sizer"); //+-By running the Command "npx hardhat size-
 // Go to https://www.alchemyapi.io, sign up, create
 // a new App in its dashboard in whatever E.V.M. Compatible Blockcahin
 // do you need, and replace "KEY" with its key in the ".env" file.
-const ETH_ROPSTEN_ALCHEMY_API_KEY = process.env.ETH_ROPSTEN_ALCHEMY_API_KEY;
 const ETH_MAINNET_ALCHEMY_API_KEY = process.env.ETH_MAINNET_ALCHEMY_API_KEY;
 
 const POLYGON_MUMBAI_ALCHEMY_API_KEY =
@@ -23,7 +22,6 @@ const POLYGON_MAINNET_ALCHEMY_API_KEY =
 // go to Account Details > Export Private Key
 // Be aware of NEVER putting real Ether into testing accounts.
 const HARDHAT_MAINNET_FORK_KEY = process.env.HARDHAT_MAINNET_FORK_KEY;
-const ROPSTEN_PRIVATE_KEY = process.env.ROPSTEN_PRIVATE_KEY;
 const ETH_MAINNET_PRIVATE_KEY = process.env.ETH_MAINNET_PRIVATE_KEY;
 const MUMBAI_PRIVATE_KEY = process.env.MUMBAI_PRIVATE_KEY;
 const POLYGON_MAINNET_PRIVATE_KEY = process.env.POLYGON_MAINNET_PRIVATE_KEY;
@@ -70,10 +68,6 @@ module.exports = {
         blockNumber: 12610259,
       },*/
     } /**
-    ropsten: {
-      url: `https://eth-ropsten.alchemyapi.io/v2/${ETH_ROPSTEN_ALCHEMY_API_KEY}`,
-      accounts: [`0x${ROPSTEN_PRIVATE_KEY}`],
-    },
     mainnet: {
       url: `https://eth-mainnet.alchemyapi.io/v2/${ETH_MAINNET_ALCHEMY_API_KEY}`,
       accounts: [`0x${ETH_MAINNET_PRIVATE_KEY}`],
