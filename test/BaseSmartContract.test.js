@@ -1,6 +1,6 @@
 import { assert } from "chai";
 import { ethers, network } from "hardhat";
-import { envConfig } from "../../config/envs";
+import { envConfig } from "../config/envs";
 const { DAI, DAI_WHALE, USDC, USDC_WHALE, USDT } = require("./ParametersConfig.js");
 let daiToken: any, usdcToken: any, usdtToken: any, baseSmartContract: any, admin: any, user1: any;
 
