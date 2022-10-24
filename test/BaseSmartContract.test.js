@@ -1,13 +1,3 @@
-
-
-  describe("BaseSmartContract deployment", async () => {
-    it("contract has a name", async () => {
-      const name = await baseSmartContract.name();
-      assert.equal(name, "SampleSmartContract");
-    });
-  });
-});
-
 import { assert } from "chai";
 import { ethers, network } from "hardhat";
 import { envConfig } from "../../config/envs";
