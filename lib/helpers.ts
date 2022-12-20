@@ -1,6 +1,5 @@
 import { ethers, network } from "hardhat";
 
-
 export const getSignerFromAddress = async (address: any) => {
     await network.provider.request({
         method: "hardhat_impersonateAccount",
