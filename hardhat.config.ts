@@ -14,7 +14,6 @@ import 'solidity-coverage';
 import { envConfig } from "./config/envs";
 import { chainIds } from "./config/networks";
 
-
 function createEthereumNetworkConfig(network: keyof typeof chainIds): NetworkUserConfig {
     const url: string = `https://eth-${network}.alchemyapi.io/v2/${envConfig.crypto.ALCHEMY_KEY}`;
     let networkConfig: NetworkUserConfig = {
