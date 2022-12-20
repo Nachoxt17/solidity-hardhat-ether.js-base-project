@@ -4,7 +4,8 @@ const chainIds = {
     goerli: 5,
     kovan: 42,
     rinkeby: 4,
-    ropsten: 3,
+    polygon: 137,
+    mumbai: 80001,
 };
 
 export { chainIds };
