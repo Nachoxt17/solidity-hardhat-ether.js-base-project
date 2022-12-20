@@ -13,7 +13,6 @@
     "hardhat"
   ],
   "scripts": {
-    "compile": "npx hardhat compile",
     "deploy": "npx hardhat run scripts/deploy.ts",
     "deploy:rinkeby": "npx hardhat run --network rinkeby scripts/deploy.ts",
     "node": "npx hardhat node --network hardhat",
