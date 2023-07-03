@@ -27,7 +27,7 @@ npm update --save --force
 
 ## Setup
 
-:two: Copy and Paste the File ".env.example" inside the same Root Folder(You will Duplicate It) and then rename it removing the part of ".example" so that it looks like ".env" and then fill all the Data Needed Inside the File. In the part of "ALCHEMY_API_KEY"
+:two: Copy and Paste the File ".env.example" inside the same Root Folder(You will Duplicate It) and then rename it removing the part of ".example" so that it looks like ".env" and then fill all the Data Needed Inside that File and "./config/envs.ts". In the part of "ALCHEMY_API_KEY"
 just write the KEY, not the whole URL.
 
 ```sh
