@@ -1,7 +1,6 @@
 import { HardhatUserConfig, NetworkUserConfig } from "hardhat/types";
 import "@typechain/hardhat";
 import "@nomiclabs/hardhat-ethers";
-import "@nomiclabs/hardhat-etherscan";
 import "@nomiclabs/hardhat-waffle";
 require("dotenv").config();
 
@@ -80,9 +79,6 @@ const hardhatConfig: HardhatUserConfig = {
                 }
             }
         },},
-    etherscan: {
-        apiKey: envConfig.crypto.ETHERSCAN_KEY,
-    },
     gasReporter: {
         enabled: true,
         showMethodSig: true,
