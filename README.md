@@ -19,7 +19,7 @@ https://faucet.polygon.technology
 dependencies:
 
 ```sh
-npm install
+npm install --force
 ```
 
 ## Setup
