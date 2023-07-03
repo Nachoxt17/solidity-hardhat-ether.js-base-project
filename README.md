@@ -21,7 +21,7 @@ dependencies:
 ```sh
 npm install --location=global npm-check-updates
 ncu -u
-npm install
+npm install --force
 ```
 
 ## Setup
