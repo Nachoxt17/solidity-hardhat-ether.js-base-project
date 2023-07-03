@@ -14,7 +14,7 @@ import { envConfig } from "./config/envs";
 import { chainIds } from "./config/networks";
 
 function createEthereumNetworkConfig(network: keyof typeof chainIds): NetworkUserConfig {
-    const url: string = `https://eth-${network}.alchemyapi.io/v2/${envConfig.crypto.ALCHEMY_KEY}`;
+    const url: string = `https://eth-${network}.g.alchemy.com/v2/${envConfig.crypto.ALCHEMY_KEY}`;
     let networkConfig: NetworkUserConfig = {
         chainId: chainIds[network],
         url,
@@ -34,7 +34,7 @@ const hardhatConfig: HardhatUserConfig = {
             // used in unit tests.
             chainId: chainIds.hardhat,
             forking: {
-                url: `https://eth-mainnet.alchemyapi.io/v2/${envConfig.crypto.ALCHEMY_KEY}`,
+                url: `https://eth-mainnet.g.alchemy.com/v2/${envConfig.crypto.ALCHEMY_KEY}`,
                 blockNumber:
                 15269796,
             },
