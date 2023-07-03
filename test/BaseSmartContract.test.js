@@ -2,7 +2,7 @@ import { assert } from "chai";
 import { ethers, network } from "hardhat";
 import { envConfig } from "../config/envs";
 const { DAI, DAI_WHALE, USDC, USDC_WHALE, USDT } = require("./ParametersConfig.js");
-let daiToken: any, usdcToken: any, usdtToken: any, baseSmartContract: any, admin: any, user1: any;
+let daiToken, usdcToken, usdtToken, baseSmartContract, admin, user1;
 
 describe("BaseSmartContract deployment", function () {
   const DECIMALS = 6;//-(Decimals for USDC and USDT. DAI has 18 Decimals).
