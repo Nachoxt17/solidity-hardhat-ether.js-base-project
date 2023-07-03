@@ -45,10 +45,7 @@ const hardhatConfig: HardhatUserConfig = {
             chainId: chainIds.hardhat,
         },
         mainnet: createEthereumNetworkConfig("mainnet"),
-        goerli: createEthereumNetworkConfig("goerli"),
-        kovan: createEthereumNetworkConfig("kovan"),
-        rinkeby: createEthereumNetworkConfig("rinkeby"),
-        ropsten: createEthereumNetworkConfig("ropsten"),
+        sepolia: createEthereumNetworkConfig("sepolia"),
     },
     solidity: {compilers: [
             {version: '0.5.12',},
