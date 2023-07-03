@@ -19,7 +19,9 @@ https://faucet.polygon.technology
 dependencies:
 
 ```sh
-npm install --force
+npm install --location=global npm-check-updates
+ncu -u
+npm install
 ```
 
 ## Setup
