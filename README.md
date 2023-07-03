@@ -22,7 +22,7 @@ dependencies:
 npm install --location=global npm-check-updates
 ncu -u
 npm install --force
-npm update --save
+npm update --save --force
 ```
 
 ## Setup
