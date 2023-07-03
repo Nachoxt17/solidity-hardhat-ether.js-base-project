@@ -15,7 +15,7 @@ describe("BaseSmartContract deployment", function () {
         {
           forking: {
             jsonRpcUrl: url,
-            blockNumber: /**14390000*/15269796,
+            blockNumber: 15269796,
           },
         },
       ],
