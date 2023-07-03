@@ -95,9 +95,6 @@ const hardhatConfig: HardhatUserConfig = {
         outDir: "typechain",
         target: "ethers-v5",
     },
-    dodoc: {
-        runOnCompile: false
-    }
 };
 
 export default hardhatConfig;
