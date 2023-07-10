@@ -2,9 +2,9 @@ require("dotenv").config();
 
 const envConfig = {
     crypto: {
-        ALCHEMY_KEY: process.env.ALCHEMY_KEY || "",
+        ETH_MAINNET_ALCHEMY_API_KEY: process.env.ALCHEMY_KEY || "",
         ETHERSCAN_KEY: process.env.ETHERSCAN_KEY || "",
-        PRIVATE_KEY: process.env.PRIVATE_KEY || "",
+        ETH_MAINNET_PRIVATE_KEY: process.env.ETH_MAINNET_PRIVATE_KEY || "",
     },
 }
 
