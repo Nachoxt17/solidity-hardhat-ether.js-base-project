@@ -54,7 +54,7 @@ const hardhatConfig: HardhatUserConfig = {
             {version: '0.8.4',},
             {version: '0.8.9',},
             {
-                version: "0.8.12",
+                version: "0.8.21",
                 settings: {
                     evmVersion: 'istanbul',
                     optimizer: {
@@ -78,7 +78,12 @@ const hardhatConfig: HardhatUserConfig = {
                 "*": ["storageLayout"]
                 }
             }
-        },},
+        },
+        mocha: {
+            timeout: 60 * 1000, // 60 seconds
+            reporter: "nyan",
+        }
+    },
     gasReporter: {
         enabled: true,
         showMethodSig: true,
