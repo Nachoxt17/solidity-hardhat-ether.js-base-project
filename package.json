@@ -19,18 +19,11 @@
     "test": "npx hardhat test --network hardhat"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^4.6.0",
-    "@uniswap/sdk": "^3.5.0",
-    "@uniswap/v3-periphery": "^1.4.1",
-    "dotenv": "^16.0.0",
-    "hardhat": "^3.4.0"
-  },
-  "dependencies": {
     "@openzeppelin/contracts": "^4.9.2",
-    "@uniswap/sdk": "^3.0.3",
+    "@uniswap/sdk": "^3.5.0",
     "@uniswap/v3-periphery": "^1.4.3",
     "dotenv": "^16.3.1",
-    "hardhat": "^2.16.1"
+    "hardhat": "^3.4.0"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.2.3",
