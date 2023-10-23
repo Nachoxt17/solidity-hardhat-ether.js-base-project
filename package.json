@@ -20,8 +20,6 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.9.2",
-    "@uniswap/sdk": "^3.5.0",
-    "@uniswap/v3-periphery": "^1.4.3",
     "dotenv": "^16.3.1",
     "hardhat": "^3.4.0"
   },
