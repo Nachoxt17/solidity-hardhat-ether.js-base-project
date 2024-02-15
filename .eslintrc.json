@@ -1,4 +1,11 @@
 {
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+
+  "env": {
+    "es5": true
+  },
   "plugins": ["prettier", "promise"],
   "rules": {
     "prettier/prettier": "error"
