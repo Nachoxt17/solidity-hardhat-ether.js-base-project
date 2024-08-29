@@ -1,14 +1,10 @@
-import { HardhatUserConfig, NetworkUserConfig } from "hardhat/types";
-import "@typechain/hardhat";
-import "@nomiclabs/hardhat-ethers";
-import "@nomiclabs/hardhat-waffle";
+import { HardhatUserConfig } from "hardhat/config";
+import "@nomicfoundation/hardhat-toolbox";
 require("dotenv").config();
 
 import "hardhat-abi-exporter";
 import "hardhat-contract-sizer";
-import "hardhat-gas-reporter";
 import "hardhat-spdx-license-identifier";
-import 'solidity-coverage';
 
 import { envConfig } from "./config/envs";
 import { chainIds } from "./config/networks";
@@ -46,43 +42,14 @@ const hardhatConfig: HardhatUserConfig = {
         mainnet: createEthereumNetworkConfig("mainnet"),
         sepolia: createEthereumNetworkConfig("sepolia"),
     },
-    solidity: {compilers: [
-            {version: '0.5.12',},
-            {version: "0.6.12"},
-            {version: "0.7.6"},
-            {version: '0.8.0',},
-            {version: '0.8.4',},
-            {version: '0.8.9',},
-            {
-                version: "0.8.21",
-                settings: {
-                    evmVersion: 'istanbul',
-                    optimizer: {
-                        enabled: true,
-                        runs: 1_000_000,
-                    },
-                    metadata: {
-                        bytecodeHash: 'none',
-                    },
-                    outputSelection: {
-                        "*": {
-                            "*": ["storageLayout"]
-                        }
-                    }
-                },
-            },
-        ],
+    solidity: {
+        version: "0.8.24",
         settings: {
-            outputSelection: {
-                "*": {
-                "*": ["storageLayout"]
-                }
-            }
+          optimizer: {
+            enabled: true,
+            runs: 1000,
+          },
         },
-        mocha: {
-            timeout: 60 * 1000, // 60 seconds
-            reporter: "nyan",
-        }
     },
     gasReporter: {
         enabled: true,
@@ -95,10 +62,6 @@ const hardhatConfig: HardhatUserConfig = {
         clear: true,
         flat: true,
         spacing: 2,
-    },
-    typechain: {
-        outDir: "typechain",
-        target: "ethers-v5",
     },
 };
 
